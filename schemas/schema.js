@@ -40,7 +40,10 @@ const RootQueries = new GraphQLObjectType({
 })
 
 const schema = new GraphQLSchema({
-    query: RootQueries
+    query: RootQueries,
+    types: [
+        UserType
+    ]
 })
 
 module.exports = schema;
