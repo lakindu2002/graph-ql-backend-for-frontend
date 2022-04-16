@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/lakindu2002/graph-ql-backend-for-frontend/issues"
   },
-  "homepage": "https://github.com/lakindu2002/graph-ql-backend-for-frontend#readme"
+  "homepage": "https://github.com/lakindu2002/graph-ql-backend-for-frontend#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0"
+  }
 }
