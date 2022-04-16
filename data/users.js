@@ -1,3 +1,5 @@
+// sample data structure
+
 const users = [
     {
         id: '1A',

@@ -1,5 +1,7 @@
 const users = require('../data/users');
 
+// declaring the query functions that get resolved by the resolver
+
 const getAllUsers = () => {
     return users;
 }
