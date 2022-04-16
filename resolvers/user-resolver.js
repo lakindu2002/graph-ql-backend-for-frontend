@@ -1,13 +1,18 @@
 const users = require('../data/users');
 
-export const getAllUsers = () => {
+const getAllUsers = () => {
     return users;
 }
 
-export const getUserById = (id) => {
+const getUserById = (id) => {
     return users.find((user) => user.id === id);
 }
-
-export const getUserByUsername = (username) => {
+const getUserByUsername = (username) => {
     return users.find((user) => user.username === username);
+}
+
+module.exports = {
+    getAllUsers,
+    getUserById,
+    getUserByUsername
 }
