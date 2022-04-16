@@ -1,27 +1,6 @@
-const { GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLSchema, GraphQLList } = require('graphql');
+const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLList } = require('graphql');
 const { getAllUsers, getUserById, getUserByUsername } = require('../resolvers/user-resolver');
-
-// define the schema (provide information about the fields the query can return)
-const UserType = new GraphQLObjectType({
-    name: 'user',
-    fields: {
-        id: {
-            type: GraphQLString,
-        },
-        name: {
-            type: GraphQLString
-        },
-        email: {
-            type: GraphQLString
-        },
-        username: {
-            type: GraphQLString
-        },
-        age: {
-            type: GraphQLInt
-        }
-    }
-})
+const UserType = require('../types/user');
 
 // declare the queries with the resolvers
 const RootQueries = new GraphQLObjectType({
