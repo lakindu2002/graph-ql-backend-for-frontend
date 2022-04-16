@@ -4,7 +4,8 @@
   "description": "This is a sample project to show how you can implement a Backend-For-Frontend pattern with GraphQL",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "dependencies": {
     "express": "^4.17.3",
     "express-graphql": "^0.12.0",
-    "graphql": "^15.8.0"
+    "graphql": "^15.8.0",
+    "nodemon": "^2.0.15"
   }
 }
